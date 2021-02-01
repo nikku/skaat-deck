@@ -1,0 +1,31 @@
+{
+  "name": "skaat-deck",
+  "version": "0.0.0",
+  "description": "Skat card deck",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.es.js",
+    "require": "./dist/index.cjs"
+  },
+  "module": "dist/index.es.js",
+  "scripts": {
+    "test": "echo 'No tests'",
+    "bundle": "rollup -c",
+    "optimize-cards": "npx svgo -p 1 -f resources/cards -o resources/cards-optimized",
+    "prepublishOnly": "npm run optimize-cards && npm run bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikku/skaat-deck.git"
+  },
+  "keywords": [
+    "Skat",
+    "deck"
+  ],
+  "author": "Nico Rehwaldt <https://github.com/nikku>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.38.3",
+    "rollup-plugin-string": "^3.0.0"
+  }
+}

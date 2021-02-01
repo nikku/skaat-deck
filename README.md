@@ -16,6 +16,11 @@ document.querySelector('img').src = `data:image/svg+xml;utf8,${svg}`;
 ```
 
 
+## Credits
+
+The card deck is based on [SVG vector cards, released to the public domain](https://commons.wikimedia.org/wiki/File:English_pattern_playing_cards_deck.svg).
+
+
 ## License
 
 MIT
