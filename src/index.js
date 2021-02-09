@@ -45,6 +45,8 @@ import Diamond_Queen from '../resources/cards-optimized/diamond-queen.svg';
 import Diamond_King from '../resources/cards-optimized/diamond-king.svg';
 import Diamond_Ace from '../resources/cards-optimized/diamond-ace.svg';
 
+import Cover from '../resources/cards-optimized/cover.svg';
+
 const bySymbol = {
   '♣7': Club_7,
   '♣8': Club_8,
@@ -119,6 +121,8 @@ export {
   Diamond_Queen,
   Diamond_King,
   Diamond_Ace,
+
+  Cover,
 
   bySymbol
 }
