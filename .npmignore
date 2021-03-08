@@ -1,4 +1,5 @@
 !dist
 resources
 src
+test
 rollup.config.js
