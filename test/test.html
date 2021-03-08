@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skaat Deck Cards Test</title>
+  <style>
+    .cards img {
+      border-radius: .3em;
+      border: solid 2px #CCC;
+      max-width: 100%;
+    }
+
+    .cards {
+      display: grid;
+      grid-gap: 1em 1em;
+      grid-template-columns: 20% 20% 20% 20%;
+    }
+
+    .cards .cards-optimized {
+      border-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="cards"></div>
+
+  <script>
+    var cards = [
+      'club-10.svg',
+      'club-7.svg',
+      'club-8.svg',
+      'club-9.svg',
+      'club-ace.svg',
+      'club-jack.svg',
+      'club-king.svg',
+      'club-queen.svg',
+      'cover.svg',
+      'diamond-10.svg',
+      'diamond-7.svg',
+      'diamond-8.svg',
+      'diamond-9.svg',
+      'diamond-ace.svg',
+      'diamond-jack.svg',
+      'diamond-king.svg',
+      'diamond-queen.svg',
+      'heart-10.svg',
+      'heart-7.svg',
+      'heart-8.svg',
+      'heart-9.svg',
+      'heart-ace.svg',
+      'heart-jack.svg',
+      'heart-king.svg',
+      'heart-queen.svg',
+      'spade-10.svg',
+      'spade-7.svg',
+      'spade-8.svg',
+      'spade-9.svg',
+      'spade-ace.svg',
+      'spade-jack.svg',
+      'spade-king.svg',
+      'spade-queen.svg'
+    ];
+
+    const container = document.querySelector('.cards');
+
+    for (const card of cards) {
+
+      for (const type of [ 'cards', 'cards-optimized' ]) {
+        const img = document.createElement('img');
+        img.src = `../resources/${type}/${card}`;
+
+        img.classList.add(type);
+        container.appendChild(img);
+      }
+
+    }
+  </script>
+</body>
+</html>
